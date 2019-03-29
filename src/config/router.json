@@ -1,0 +1,15 @@
+{
+  "/demo": {
+    "page": "demo",
+    "id": "__demo__"
+  },
+  "/demo-1": {
+    "page": "demo-1",
+    "id": "__demo-1__"
+  },
+  "/": {
+    "page": "demo-focus",
+    "id": "__demo-focus__",
+    "init": true
+  }
+}

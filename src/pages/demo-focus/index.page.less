@@ -1,0 +1,59 @@
+html, body {
+  margin: 0;
+  padding: 10px;
+}
+#__demo-focus__ {
+  @height: 4vw;
+  outline: 0;
+  font-size: 30px;
+  h1 {
+    font-size: 1.2em;
+    margin: 0 0 .8em;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .focusable {
+    border-radius: 6px;
+    border: 3px solid #aaa;
+    min-height: @height;
+    &:focus {
+      outline: 0;
+      border-color: #ffb91a;
+      background-color: #62c4ff;
+      color: white;
+      font-weight: bold;
+    }
+    margin-bottom: 10px;
+  }
+  .group {
+    text-align: center;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .line {
+    display: flex;
+  }
+  .col {
+    flex-grow: 1;
+    flex-basis: 60%;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  .left {
+    flex-shrink: 1;
+    flex-basis: 40%;
+  }
+  .row-2 {
+    height: calc(2 * @height + 10px + 6px);
+  }
+
+  button {
+    line-height: 3em;
+    background-color: transparent;
+    font-size: 1em;
+  }
+}
